@@ -3398,7 +3398,8 @@
             ? e.pageX === t.pageX && e.pageY === t.pageY
             : 'clientX' in t &&
               'clientY' in t &&
-              e.clientX === t.clientX && e.clientY === t.clientY))
+              e.clientX === t.clientX &&
+              e.clientY === t.clientY))
       );
     }
     function Cr(e, t) {
@@ -17348,7 +17349,8 @@
           -1 === e.indexOf('Mobile Safari') ||
           -1 !== e.indexOf('Chrome') ||
           -1 !== e.indexOf('Windows Phone')) &&
-        window.history && 'pushState' in window.history
+        window.history &&
+        'pushState' in window.history
       );
     }
     function C() {
@@ -28052,8 +28054,8 @@
             ? 0 === o.type
             : !r &&
               2 < t.length &&
-                ('o' === t[0] || 'O' === t[0]) &&
-                ('n' === t[1] || 'N' === t[1]);
+              ('o' === t[0] || 'O' === t[0]) &&
+              ('n' === t[1] || 'N' === t[1]);
       i ||
         (Y(t, n, o, r) && (n = null),
         r || null === o
@@ -30790,7 +30792,8 @@
           ? e.shouldComponentUpdate(r, i, a)
           : !t.prototype ||
             !t.prototype.isPureReactComponent ||
-            !no(n, r) || !no(o, i)
+            !no(n, r) ||
+            !no(o, i)
       );
     }
     function Li(e, t, n) {

@@ -29,16 +29,19 @@ export default function() {
 
 ## 存储对象
 
-在数组中存储对象的情况下，需要给数组增加一个唯一的key用来比标识数组。
+在数组中存储对象的情况下，需要给数组增加一个唯一的 key 用来比标识数组。
 
 ```tsx
 import React, { useState } from 'react';
 import useSelectList from './useSelectList';
 
 export default function() {
-  const { list, setList, has, add, remove, toggle } = useSelectList<number>([], {
-    key: 'id'
-  });
+  const { list, setList, has, add, remove, toggle } = useSelectList<number>(
+    [],
+    {
+      key: 'id',
+    },
+  );
 
   return (
     <>
